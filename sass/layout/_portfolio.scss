@@ -1,0 +1,99 @@
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .portfolio-button-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
+    padding-bottom: 16px;
+     
+  }
+  .portfolio-button-list-item:not(:last-child) {
+    margin-right: 8px;
+  }
+  
+  .portfolio-button {
+    @include font (16px, 500, 1.625);
+    min-width: 73px;
+    height: 38px;
+    border-radius: 4px;
+    font-family: $main-font;
+    display: flex;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border: none;
+    
+    background-color: #F5F4FA;
+    color: $main-text-color;
+    cursor: pointer;
+    padding: 6px 22px;
+  
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+      color: $white-color;
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+      outline: none;
+    }
+  }
+  
+  
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .portfolio-list-item {
+    width: 370px;
+    height: 404px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+    &:nth-last-child(-n + 3n) {
+      margin-bottom: 0;
+    }
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+    &:hover {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+  
+  .portfolio-list-wrapper {
+    padding: 20px 24px;
+    border: 1px solid #eeeeee;
+    border-top: none;
+  }
+  
+  
+  .portfolio-list-title {
+    @include font (18px, 700, 2);
+    letter-spacing: 0.06em;
+    color: $main-text-color;
+    margin-bottom: 4px;
+  }
+  
+  .portfolio-list-text {
+    @include font (16px, 400, 1.875);
+    letter-spacing: 0.03em;
+    color: $link-color;
+    font-family: $main-font;
+  }
+  
+  .list__item-img-wrapper{
+    position: relative;
+    overflow: hidden;
+  
+  }
+
+  .description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: $white-color
+  }
