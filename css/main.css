@@ -933,8 +933,8 @@ section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   background-color: #ffffff;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1054,8 +1054,8 @@ section {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.66;
   letter-spacing: 0.01em;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1063,7 +1063,6 @@ section {
 .checkbox-field {
   display: flex;
   align-items: center;
-  padding-left: 13px;
   line-height: 1.71;
   color: #212121;
 }
@@ -1098,9 +1097,9 @@ section {
 }
 
 .checkbox-label {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 1.714;
+  line-height: 1.66;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
   color: #757575;
@@ -1114,14 +1113,11 @@ section {
   position: absolute;
   width: 200px;
   height: 50px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 56px;
-  padding-right: 55px;
+  padding: 10px 55px;
   border-radius: 4px;
   border: none;
   margin-top: 30px;
-  transform: translateX(124px);
+  transform: translateX(85px);
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1132,5 +1128,22 @@ section {
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+  .checkbox-label {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.714;
+  }
+  .checkbox-field {
+    padding-left: 13px;
+  }
+  .form-btn {
+    transform: translateX(124px);
+  }
 }
 /*# sourceMappingURL=main.css.map */
