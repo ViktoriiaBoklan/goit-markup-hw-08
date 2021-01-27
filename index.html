@@ -11,48 +11,73 @@
     <link rel="stylesheet" href="./css/main.min.css"/>
 </head>
 <body>
-    <!--
+    
     <header class="header">
-        <div class="container">
-        <nav class="navigation">
-            <a class="logo link" href="/" aria-label="логотип сайта" lang="en">
-                <span style="color: #2196F3">Web</span>
-                <span style="color: #000000">Studio</span> </a>
-            <ul class="nav-list list">
-                <li class="nav-list-item">
-                    <a class ="nav-list-link current link" href="./studia.html">Студия</a>
+        
+        <nav class="navigations container">
+            <a class="logo-link link" href="/" aria-label="логотип сайта" lang="en">
+                <span class="logo-left" style="color: #2196F3">Web</span>
+                <span class="logo-right" style="color: #000000">Studio</span> </a>
+        <button type="button" class="menu-button is-open"     
+                aria-expanded="false" 
+                aria-controls="menu-container"
+                data-menu-button>
+
+        <svg class="close-menu" width="40" height="40" aria-lable="Переключатель мобильного меню">
+                    <use class="icon-close" href="./images/sprite.svg#icon-close" width="19" height="19"></use>
+                    <use class="icon-menu" href="./images/sprite.svg#icon-menu" width="24" height="16"></use>
+                </svg>
+            </button>     
+            <div class="menu-container" id="menu-container" data-menu>
+                <div class="navigation">
+
+            <ul class="navigation-list list">
+                <li class="navigation-list-item">
+                    <a class ="navigation-list-link current link" href="./index.html">Студия</a>
                 </li>
-                <li class="nav-list-item">
-                    <a class="nav-list-link link" href="./portfolio.html">Портфолио</a>
+                <li class="navigation-list-item">
+                    <a class="navigation-list-link link" href="./portfolio.html">Портфолио</a>
                 </li>
-                <li class="nav-list-item">
-                    <a class="nav-list-link link" href="">Контакты</a>
+                <li class="navigation-list-item">
+                    <a class="navigation-list-link link" href="">Контакты</a>
                 </li>
             </ul>
-            </nav>
+        </div>
         
-                <ul class="address list">
+
+        <div class="contacts">
+            <address class="address">
+                <ul class="address-link list">
                     <li class="address-list-item">
-                        <a class="header-mail link" href="mailto:info@devstudio.com">
+                        <a class="header-contact-mail link" href="mailto:info@devstudio.com">
                     <svg class="header-icon" width="16px" height="12px">
                         <use href="./images/sprite.svg#icon-envelope"></use>
                     </svg>info@devstudio.com
                         </a></li>
                     <li class="address-list-item">
-                    <a class="header-tel link" href="tel:+380961111111">
+                    <a class="header-contact-tel link" href="tel:+380961111111">
                         <svg class="header-icon" width="10px" height="16px">
                             <use href="./images/sprite.svg#icon-smartphone"></use> 
                         </svg>+38 096 111 11 11
                     </a></li>
                 </ul>
-        
-        </div>
-    </header>-->
+            </address>
+            <ul class="header-social-list">
+                <li class="social-header-item list">Instagram</li>
+                <li class="social-header-item list">Twitter</li>
+                <li class="social-header-item list">Facebook</li>
+                <li class="social-header-item list">LinkedIn</li>
+            </ul>
+        </div>      
+
+</nav>   
+           
+    </header>
 
     <main>
         <!-- HERO -->
         <section class="hero">
-        <div class="container hero-list">
+        <div class="hero-container container">
         <h1 class="hero-title">Эффективные решения<br> для вашего бизнеса</h1>
 <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
         </div>
@@ -60,7 +85,7 @@
         
 <!-- FEATURES -->
             <section class="features">
-            <div class="container">
+            <div class="best-features container">
             <h2 class="visually-hidden">Наши преимущества</h2>
 
             <ul class="features-list list">
@@ -145,7 +170,7 @@
  <!-- OUR TEAM -->
  
         <section class="team section">
-            <div class="container">
+            <div class="our-team container">
             <h2 class="our-team-title">Наша команда</h2>
             <ul class="team-list list">
 
@@ -398,7 +423,7 @@
     <!-- REGULAR  CUSTOMERS -->
 
 <section class="regular-customers section">
-     <div class="container">
+     <div class="customers-container container">
      <h2 class="regular-customers-title">Постоянные клиенты</h2>
      <ul class="customers list">
         <li class="customers-list-item">
@@ -437,7 +462,7 @@
     <!-- FOOTER -->
     
     <footer class="footer">
-        <div class="footer-container-address container">
+        <div class="footer-container container">
             <div class="footer-main-contacts">
                 <div class="footer-logo-address">            
     <a class="footer-logo" href="" lang="en" aria-label="логотип сайта">
@@ -495,13 +520,15 @@
 
     <div class="subscription">
         <b class="join-up">Подпишитесь на рассылку</b>
-        <form class="subscription-form">
+        <form>
+            <span class="subscription-form">
         <input class="footer-email" type="email" name="mail" placeholder="E-mail"/>
         <button class="email-btn" type="submit">Подписаться
         <svg class="icon-send" width="24" height="24">
         <use href="./images/sprite.svg#icon-send"></use>    
         </svg>
         </button>
+        </span>
         </form>
     </div>
 </div>
@@ -565,6 +592,7 @@
      </div>
  </div>
  <script src="./js/modal.js"></script>
+ <script src="./js/menu.js"></script>
 
 </body>
 </html>
