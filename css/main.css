@@ -843,10 +843,12 @@ section {
   .about-list {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
   .about-list .about-list-item {
     position: relative;
-    flex-basis: calc(100%/3 - 60px);
+    flex-basis: calc(100%/3 - 40px);
   }
   .about-list-item:not(:last-child) {
     margin-right: 30px;
